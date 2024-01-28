@@ -1,0 +1,29 @@
+
+
+.Controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.Button {
+    font-size: 25px;
+    padding: 5px;
+    margin: 5px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Number {
+    font-size: 25px;
+    margin: 5px;
+}
+
+
+.Button:hover {
+    background-color: dimgrey;
+}
+
