@@ -1,0 +1,67 @@
+.CardItem {
+    border: 3px solid black;
+    border-radius: 8px;
+    width: 350px;
+    height: 650px;
+    display: inline-block;    
+    vertical-align: top;    
+    margin: 10px;
+    background-color: black;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+}
+
+.Header {
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.ItemImg {
+    width: 250px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.InfoPrecio {
+    margin-bottom: 4px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.InfoDescripcion {
+    color: #fff;
+    font-size: 13px;
+}
+
+.ItemFooter {
+    margin-top: 8px;
+    text-align: center;
+
+
+}
+
+.Option {
+    background-color: grey;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.Option:hover {
+    background-color: #fff;
+    color: grey;
+}
+
+@media (max-width: 768px) {
+    .CardItem {
+        width: 100%;
+        /* En dispositivos más pequeños, ocupar todo el ancho */
+        margin-right: 0;
+        /* Eliminar el margen derecho */
+    }
+}

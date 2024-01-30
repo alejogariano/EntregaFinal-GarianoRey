@@ -1,18 +1,20 @@
 import CartWidget from '../CartWidget/CartWidget'
 import './NavBarStyle.css'
-function NavBar () {
+function NavBar() {
     return (
         <nav>
-        <h1>El Club del Mate</h1>
+            <h1>El Club del Mate</h1>
 
-        <div>
-        <button>Inicio</button>
-        <button>Tienda</button> 
-        <button>Contacto</button> 
-        <button>Blog</button> 
-        <button>Unite al Club</button>        
-        </div>
-        <CartWidget/>
+            <div>
+                <ul>
+                    <li><button>Inicio</button></li>
+                    <li><button>Tienda</button></li>
+                    <li><button>Contacto</button></li>
+                    <li><button>Blog</button></li>
+                    <li><button>Unite al Club</button></li>
+                </ul>
+            </div>
+            <CartWidget />
         </nav>
     )
 }

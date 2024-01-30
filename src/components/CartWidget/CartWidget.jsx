@@ -1,10 +1,10 @@
 import './CartWidgetStyle.css'
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
-function CartWidget  () {
+function CartWidget() {
     return (
         <div>
-        <ShoppingBagIcon/>
-        0
+            <ShoppingBagIcon />
+            0
         </div>
     )
 }

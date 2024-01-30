@@ -1,5 +1,3 @@
-
-
 .Controls {
     display: flex;
     align-items: center;
@@ -26,4 +24,3 @@
 .Button:hover {
     background-color: dimgrey;
 }
-
