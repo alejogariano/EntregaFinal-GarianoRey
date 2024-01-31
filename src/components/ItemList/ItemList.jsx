@@ -1,5 +1,6 @@
 import './ItemList.css'
 import Item from '../Item/Item'
+import '../../asyncMock'
 
 const ItemList = ({ products }) => {
     return (

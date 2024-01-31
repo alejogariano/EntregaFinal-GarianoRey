@@ -5,12 +5,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 180px;
 }
 
 h1 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-transform: uppercase;
   font-size: 50px;
+  margin: 0;
 }
 
 ul {
@@ -20,17 +22,30 @@ ul {
   display: flex;
 }
 
-button {
-  background-color: transparent;
-  border: none;
-  color: white;
-  cursor: pointer;
+ul li {
   margin-right: 10px;
-  font-size: 20px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-button:hover {
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  background-color: white;
+}
+
+.Categories {
+  margin-right: 20px;
+}
+
+.Option {
+  color: white;
+  text-decoration: none;
+}
+
+.ActiveOption {
   color: black;
   background-color: white;
 }

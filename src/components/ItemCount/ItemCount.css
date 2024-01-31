@@ -9,7 +9,8 @@
     font-size: 25px;
     padding: 5px;
     margin: 5px;
-    background-color: black;
+    background-color: gray;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -18,9 +19,11 @@
 .Number {
     font-size: 25px;
     margin: 5px;
+    color: #fff;
 }
 
 
 .Button:hover {
-    background-color: dimgrey;
+    background-color: #fff;
+    color: gray;
 }
