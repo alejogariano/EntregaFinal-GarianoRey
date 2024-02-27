@@ -13,7 +13,7 @@ const Item = ({ id, category, nombre, imagen, precio, descripcion }) => {
             </picture>
             <section>
                 <p className='InfoPrecio'>
-                    {precio}
+                    $ {precio}
                 </p>
                 <p className='InfoDescripcion'>
                     {descripcion}

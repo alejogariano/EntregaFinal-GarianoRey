@@ -1,59 +1,53 @@
-.CardItem {
+.Cart {
     border: 3px solid black;
     border-radius: 8px;
-    width: 350px;
-    height: 650px;
-    display: inline-block;
-    vertical-align: top;
+    width: 350px; /* Ancho ajustado para que coincida con CardItem */
+    height: auto; /* Eliminado el alto fijo para permitir que el contenedor se ajuste según el contenido */
     margin: 10px;
     background-color: black;
     padding: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: inline-block;
-}
-
-.Header {
+    vertical-align: top;
+  }
+  
+  .Cart h1 {
     margin-bottom: 8px;
     color: #fff;
     font-size: 20px;
     text-transform: uppercase;
-}
-
-.ItemImg {
-    width: 250px;
-    border-radius: 8px;
-    margin-bottom: 8px;
-}
-
-.InfoPrecio {
+  }
+  
+  .Cart h3 {
     margin-bottom: 4px;
-    color: #fff;
+    color: black;
     font-size: 25px;
-}
-
-.InfoDescripcion {
+  }
+  
+  .Cart .Button {
+    background-color: grey;
     color: #fff;
-    font-size: 13px;
-}
-
-.ItemFooter {
-    margin-top: 8px;
-    text-align: center;
-
-
-}
-
-.Option {
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .Cart .Button:hover {
+    background-color: #fff;
+    color: grey;
+  }
+  
+  .Cart .Option {
     background-color: grey;
     color: #fff;
     border-radius: 4px;
     padding: 8px 16px;
     cursor: pointer;
     justify-content: center;
-}
-
-.Option:hover {
+  }
+  
+  .Cart .Option:hover {
     background-color: #fff;
     color: grey;
-}
-
+  }
+  
