@@ -1,4 +1,4 @@
-#¡Bienvenido al proyecto de e-commerce El Club del Mate!
+# ¡Bienvenido al proyecto de e-commerce El Club del Mate!
 
 Este proyecto React fue creado con el objetivo de proporcionar una plataforma de compra en línea para productos relacionados con el mate. Aquí encontrarás una variedad de componentes diseñados para brindar una experiencia de usuario fluida y agradable mientras navegas por los productos y realizas compras.
 
