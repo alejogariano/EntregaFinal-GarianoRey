@@ -1,0 +1,33 @@
+.CartItem {
+    display: flex;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 25px;
+    background-color: dimgrey;
+    color: #fff;
+}
+
+.CartItemImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 60px;
+}
+
+.CartItemDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.CartItemName {
+    font-size: 18px;
+    margin: 0;
+}
+
+.CartItemPrice,
+.CartItemQuantity,
+.CartItemSubtotal {
+    margin: 5px;
+}

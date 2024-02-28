@@ -22,14 +22,14 @@ const Checkout = () => {
             }
 
             const batch = writeBatch(db)
-            
+
             const outOfStock = []
 
-            const ids = cart.map (prod => prod.id)
+            const ids = cart.map(prod => prod.id)
 
-            const productsRef = collection (db, 'products')
+            const productsRef = collection(db, 'products')
 
-            const productsAddedFromFirestore = await getDocs(query(productsRef, where(documentId(),'in', ids)))
+            const productsAddedFromFirestore = await getDocs(query(productsRef, where(documentId(), 'in', ids)))
 
             const { docs } = productsAddedFromFirestore
 
@@ -41,27 +41,27 @@ const Checkout = () => {
                 const prodQuantity = productsAddedToCart?.quantity
 
                 if (stockDb >= prodQuantity) {
-                    batch.update(doc.ref, {stock: stockDb - prodQuantity})
+                    batch.update(doc.ref, { stock: stockDb - prodQuantity })
                 } else {
-                    outOfStock.push ({id: doc.id, ...dataDoc})
+                    outOfStock.push({ id: doc.id, ...dataDoc })
                 }
             })
 
-            if(outOfStock.length === 0) {
+            if (outOfStock.length === 0) {
                 await batch.commit()
 
-                const orderRef = collection (db, 'orders')
+                const orderRef = collection(db, 'orders')
 
-                const orderAdded = await addDoc (orderRef, objOrder)
+                const orderAdded = await addDoc(orderRef, objOrder)
 
                 setOrderId(orderAdded.id)
                 clearCart()
             } else {
-                console.error ('Producto fuera de stock')
+                console.error('Producto fuera de stock')
             }
 
         } catch (error) {
-            console.error('Error al crear la orden:', error)
+            console.log(error)
         } finally {
             setLoading(false)
         }

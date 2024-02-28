@@ -36,7 +36,7 @@ const ItemDetailContainer = () => {
         {loading ? (
             <p>Cargando...</p>
         ) : (
-            product && <ItemDetail {...product} />
+             <ItemDetail {...product} />
         )}
     </div>
     )

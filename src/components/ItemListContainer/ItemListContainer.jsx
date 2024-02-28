@@ -24,10 +24,10 @@ const ItemListContainer = ({ greeting }) => {
           const data = doc.data ()
           return {id: doc.id,...data}
         })
-        setProducts (productsAdapted)
+        setProducts(productsAdapted)
       })
       .catch(error => {
-        console.error(error)
+        console.log(error)
       })
       .finally (() => {
         setLoading (false)
