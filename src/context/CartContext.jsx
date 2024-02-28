@@ -10,8 +10,8 @@ export const CartProvider = ({ children }) => {
     console.log(cart)
 
     const addItem = (item, quantity) => {
-        if (! isInCart(item.id)) {
-            setCart(prev => [...prev, { ...item, quantity }])
+        if (!isInCart(item.id)) {
+            setCart(prev => [...prev, {...item, quantity }])
         } else {
             console.error ('El producto ya fue agregado')
         }

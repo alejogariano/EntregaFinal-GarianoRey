@@ -1,0 +1,19 @@
+.CartWidget {
+    position: fixed;
+    top: 10px; /* Ajusta este valor según tu preferencia */
+    right: 10px; /* Ajusta este valor según tu preferencia */
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .CartWidget:hover {
+    color: black;
+    background-color: white;
+  }
+  
+  .CartWidget svg {
+    margin-right: 5px;
+  }
+  
