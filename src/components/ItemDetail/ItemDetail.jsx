@@ -1,5 +1,5 @@
 import ItemCount from '../ItemCount/ItemCount'
-import { useContext, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import { CartContext } from '../../context/CartContext' 
@@ -40,7 +40,7 @@ const ItemDetail = ({ id, nombre, imagen, precio, descripcion }) => {
                     quantityAdded > 0 ? (
                         <Link to='/cart' className='Option'>Finalizar compra</Link>
                     ) : (
-                        <ItemCount initial={0} stock={10} description={descripcion} onAdd={handleOnAdd} />
+                        <ItemCount initial={1} stock={10} description={descripcion} onAdd={handleOnAdd} />
                     )
                 }
 

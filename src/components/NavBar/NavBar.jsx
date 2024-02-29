@@ -9,7 +9,7 @@ const NavBar = () => {
 
             <div className='Categories'>
                 <ul>
-                    <li> <NavLink to={`/category/mates`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> Mates</NavLink> </li>
+                    <li> <NavLink to={`/category/mates`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> Mates </NavLink> </li>
                     <li> <NavLink to={`/category/termos`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Termos</NavLink> </li>
                     <li> <NavLink to={`/category/accesorios`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Accesorios</NavLink> </li>
                 </ul>
